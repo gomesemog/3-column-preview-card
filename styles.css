@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-orange: hsl(31, 77%, 52%);
+    --primary-cyan: hsl(184, 100%, 22%);
+    --primary-cyan-dark: hsl(179, 100%, 13%);
+    --very-light-grey: hsl(0, 0%, 95%);
+    --transparent-white: hsla(0, 0%, 100%, 0.75);
+}
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-orange: hsl(31, 77%, 52%);
+    --primary-cyan: hsl(184, 100%, 22%);
+    --primary-cyan-dark: hsl(179, 100%, 13%);
+    --very-light-grey: hsl(0, 0%, 95%);
+    --transparent-white: hsla(0, 0%, 100%, 0.75);
+}
+
+body {
+    font-size: 15px;
+    background-color: var(--very-light-grey);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1.15fr 1.3fr;
+    margin: 0 1em;
+    border-radius: 20px;
+}
+
+h1 {
+    font-family: 'Big Shoulders Display', sans-serif;
+    text-transform: uppercase;
+    color: var(--very-light-grey);
+    font-weight: 700;
+    padding: 1.5rem 0;
+}
+
+p {
+    font-family: 'Lexend Deca', sans-serif;
+    color: var(--transparent-white);
+    font-size: .8rem;
+    width: 26ch;
+    letter-spacing: .05rem;
+    line-height: 1.5rem;
+    font-weight: 400;
+    margin-right: 4em;
+}
+
+button {
+    font-family: 'Lexend Deca', sans-serif;
+    text-align: center;
+    background-color: var(--very-light-grey);
+    border: none;
+    font-size: .8rem;
+    padding: .7em 1.5em;
+    border-radius: 25px;
+    margin-top: 7em;
+    margin-bottom: 3em;
+}
+
+div {
+    min-width: 50%;
+}
+
+:is(.sedans, .suvs, .luxury) button:hover {
+    background-color: transparent;
+    color: white;
+    outline: 1px solid var(--very-light-grey);
+    cursor: pointer;
+    transition: 1.2s;
+}
+
+:is(.sedans, .suvs, .luxury) button:not(:hover) {
+    transition: 2s;
+}
+
+.sedans {
+    background-color: var(--primary-orange);
+    border-radius: 10px 0 0 10px;
+    padding-left: 3rem;
+    padding-top: 3rem;
+}
+
+.sedans button {
+    color: var(--primary-orange);
+}
+
+.suvs {
+    background-color: var(--primary-cyan);
+    padding-left: 3rem;
+    padding-top: 3rem;
+}
+
+.suvs button {
+    color: var(--primary-cyan);
+}
+
+.luxury {
+    background-color: var(--primary-cyan-dark);
+    border-radius: 0 10px 10px 0;
+    padding-left: 3rem;
+    padding-top: 3rem;
+    padding-right: 1.25rem;
+}
+
+.luxury button {
+    color: var(--primary-cyan-dark);
+}
+
+img {
+    width: 52px;
+}
+
+@media (max-width: 900px) {
+    * {
+        font-size:
+    }
+
+    body {
+        background-color: var(--very-light-grey);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        max-width: 20rem;
+    }
+
+    p {
+        width: 80%;
+    }
+
+    .sedans {
+        border-radius: 10px 10px 0 0;
+    }
+
+    .luxury {
+        border-radius: 0 0 10px 10px;
+    }
+
+    button {
+        margin-top: 1.75em;
+    }
+}
+
+
+
+
+
